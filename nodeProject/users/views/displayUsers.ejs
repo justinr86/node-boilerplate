@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Users</title> 
+</head> 
+  
+<body> 
+    <p>Users.</p> 
+
+    <table> 
+        <tr>
+            <td>
+                Username
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Email Address
+            </td>
+        </tr>
+        <% for(var i=0; i < userData.length; i++) { %>  
+        <tr>
+            <td><%= userData[i].dataValues.username %></td>
+            <td><%= userData[i].dataValues.first_name + " " + userData[i].dataValues.last_name%></td>
+            <td><%= userData[i].dataValues.email %></td>
+        </tr>
+        <% } %>
+    </table>
+
+</body> 
+  
+</html>     

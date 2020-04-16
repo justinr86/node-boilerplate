@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+<h1>Users</h1>
+    <div>
+        <p>Enter Details For New User Below</p> 
+        <form name="addUser" method="post" action="/api/users/add">
+            <div>
+                <label for="userName">Username</label>
+                <input type="text", name="userName"/>
+            </div>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text", name="firstName"/>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text", name="lastName"/>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email", name="email"/>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password", name="userpasswordName"/>
+            </div>
+            <input type="submit"></input>
+        </form>
+    </div>

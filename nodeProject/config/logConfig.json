@@ -1,0 +1,8 @@
+{
+    "logFileName": "app-%DATE%.log",
+    "logDirectory": "logs",
+    "logFormat":
+    {
+        "timestamp": "YYYY-MM-DD HH:mm:ss"
+    }
+}

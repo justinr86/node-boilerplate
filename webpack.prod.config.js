@@ -6,7 +6,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './public/index.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -53,7 +53,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/html/index.html",
+      template: "./public/html/index.html",
       filename: "./index.html",
     }),
 		new MiniCssExtractPlugin({

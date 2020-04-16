@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './nodeProject/index.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -52,11 +52,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/html/index.html",
-      filename: "./index.html",
-      excludeChunks: [ 'server' ]
-    }),
 		new webpack.NoEmitOnErrorsPlugin()
   ]
 }
