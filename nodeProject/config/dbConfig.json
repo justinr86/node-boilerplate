@@ -2,9 +2,10 @@
     "dbName": "nodeproject",
     "userName": "postgres",
     "password": "CoffeeTime#1",
-    "connection":{
+    "options":{
         "host": "localhost",
         "dialect": "postgres",
+        "logging": false,
         "pool": {
             "max": 10,
             "min": 0,

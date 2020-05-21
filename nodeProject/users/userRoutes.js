@@ -20,9 +20,8 @@ router.get('/users', (req, res) => {
 })
 
 router.post('/users/add', (req, res) => {
-    console.log(req.body)
-    addUser(req.body)
-    res.send('USERS ADD')
+    const result = addUser(req.body)
+    console.log(result)
     res.end()
 })
 

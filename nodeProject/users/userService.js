@@ -7,8 +7,10 @@ const { User } = require('../db')
  */
 const addUser = (user) => {
 
+    console.log(user)
+
     User.create({ 
-        username: `${user.userName}`,
+        username: `${user.username}`,
         password: `${user.password}`,
         first_name: `${user.firstName}`,
         last_name: `${user.lastName}`,
@@ -16,6 +18,9 @@ const addUser = (user) => {
     })
     .then(result => {
         console.log("Auto-generated ID:", result.id)
+        return result
+    }).catch(err => {
+        console.log("Error updating User table: ",err)
     })
 }
 

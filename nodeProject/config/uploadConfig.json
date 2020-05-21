@@ -1,0 +1,5 @@
+{
+    "maxFileSize": 52428800,
+    "allowedExtensions": ["jpg", "png", "jpeg"],
+    "imageDirectory": "C:/nodeProject/utilities/img"
+}

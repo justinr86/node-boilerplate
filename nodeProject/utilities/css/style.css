@@ -2,6 +2,12 @@ h1, h2, h3, h4, h5, p {
   font-family: helvetica;
   color: #3e3e3e;
 }
+
+body {
+  margin: 0px;
+  font-family: 'Didact Gothic';
+}
+
 .description {
   font-size: 14px;
   color: #9e9e9e;
@@ -12,4 +18,19 @@ h1, h2, h3, h4, h5, p {
   height: 300px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+
+.MuiAppBar-colorPrimary {
+  background-color: #ffffff;
+  color: #57bc90;
+  font-size: 22px
+}
+
+
+
+.menuBar {
+  background-color: #ffffff;
+  color: #57bc90;
+  font-size: 22px
 }

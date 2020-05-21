@@ -3,7 +3,11 @@ const Sequelize = require('sequelize')
 const UserModel = require('./models/user')
 const config = require('../config/dbConfig.json')
 
-const sequelize = new Sequelize(config.dbName, config.userName, config.password, config.connection)
+const sequelize = new Sequelize(
+    config.dbName, 
+    config.userName, 
+    config.password, 
+    config.options)
 
 const User = UserModel(sequelize, Sequelize)
 
